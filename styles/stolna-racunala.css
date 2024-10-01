@@ -1,0 +1,553 @@
+/* moji fontovi: */
+@font-face {
+    font-family: Cool-font;
+    src: url(./../fonts/Moj-fond-1.ttf);
+}
+
+@font-face {
+    font-family: Gow-font;
+    src: url(./../fonts/GODOFWAR.TTF);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;           /*posatvlja difulutnu velcinu fotna na 62.5 posto od 16 px, sto je 10 px */
+}
+
+body{
+    font-size: 1.6rem;          /*u bodiju posatvlja velciinu fonta na 16px, sto je opet isto kao i defoultno,
+                            ali sada kada korsitimo rem mozemo definirait apuslutno bilo koju vrijendost pixela, 1.6rme je defoultno*/
+}
+
+/* neke specificne stvari za cijeli dokument: */
+li {
+    padding: 0;
+    margin: 0;
+    width: fit-content;
+}
+
+
+/* glavni dio stilova */
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    /*mozda cu tu jos dodad display: flex ali za sada cu probat bez toga*/
+}
+
+
+/* stilovi za zaglavlje stranice: */
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    gap: 3rem;
+
+    justify-content: space-between;
+    align-content: baseline;    /* jos vidit za ovo */
+    /* mozda jos align-items */
+
+    padding: 1rem 3rem 1rem 3rem;        /* 2% od roditleja koji je u ovom slucaju sam body element */
+    background-color: #00755e;
+    /* border-bottom: 1px solid black; */
+}
+
+    /* logotip dio */
+.logotip {
+    flex-grow: 0;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content:center;
+    align-items: center;
+
+
+}
+
+.logo-slika {
+    width: 8rem;
+    height: auto;
+}
+
+.ime-kompanije {
+    font-size: 7rem;
+    padding-left: 2rem;
+    font-family: Gow-font;
+}
+
+    /* about dio */
+ul.about {
+    padding: 0;         
+    margin: 0;
+    list-style-type: none;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.about-anchor {
+    font-size: 2.5rem;
+    font-family: Gow-font;
+    text-decoration: none;
+    color: black;
+}
+
+.about-anchor:hover {
+    font-size: 3.6rem;
+}
+
+    /* cart & search dio */
+.cart-and-search {
+    padding: 0;                               /* 1.7rem; */
+    gap: 1.5rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.cart {
+    width: 5rem;
+    height: auto;
+}
+
+.cart:hover {
+    transform: scale(1.2);
+}
+
+.search {
+    width: auto;
+    height: 4.5rem;
+}
+
+.search:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+/* css za 2. dio stranice: */
+.drugi-dio-stranice {
+    width: 100vw;
+    height: 60vh;
+
+    background: #c4fcf0 url(./../images/pozadina4.jpg) right center no-repeat scroll;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.drugi-dio-stranice span {
+    display:inline-block;
+    padding: 5rem;
+    font-size: 5rem;
+    font-family: Gow-font;
+    color: #659b90;
+    -webkit-text-stroke: 0.1rem black; 
+}
+
+/* css za 3. dio stranice */
+.treci-dio-stranice {
+    background-color: #659b90;
+    padding: 8rem 5rem;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: left;
+    align-content: flex-start;
+    align-items: flex-start;
+
+    column-gap: 5rem;
+}
+
+.izbor-kategorije {
+    background-color: #fce696;
+    padding: 4rem;
+    border-radius: 2rem;
+
+    font-family: sans-serif;
+}
+
+.izbor-kategorije span {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.sve-kategorije {
+    padding: 3rem 0 0 0;         
+    margin: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: column nowrap;
+    row-gap: 3rem;
+
+    font-size: 3rem;
+}
+
+.sve-kategorije li:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+    /* css sadrzaj-specificne-kategorije: */
+.sadrzaj-specificne-kategorije {
+    background-color: #00755e;
+    padding: 4rem 6rem 4rem 6rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: center;
+}
+
+.ime-trenutne-kategorije {
+    font-size: 4rem;
+    padding-bottom: 3rem;
+
+    font-weight: 600;
+}
+
+.sprmenik-proizvoda-kategorije {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 5rem;
+    row-gap: 4rem;
+
+    justify-content: center;
+}
+
+.proizvod-slika-opis {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.proizvod-slika {
+    border: 7px solid #fce696;
+    border-radius: 2rem;
+}
+
+.proizvod-opis {
+    padding-top: 1.8rem;
+    font-size: 2.7rem;
+    text-align: center;
+}
+
+.proizvod-slika:hover {
+    /* za sad nista */
+}
+
+.proizvod-slika-opis:hover {
+    color: #fce696;
+}
+
+
+/* div sa zaglavljem */
+.footer {
+    background-color: #1f2937;
+    height: 14vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #00755e;
+    font-size: 5rem;
+    font-family: Gow-font;
+    text-align: center;
+    padding: 0 2rem;
+}
+
+
+
+
+
+/* stilovi za kosaricu */
+.dio-sa-kosaricom {
+    background-color: #00755e;
+    padding: 5rem 5rem 5rem 5rem;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+}
+
+.k-zajednicki-spremnik {
+    flex: 1 1 auto;
+
+    background-color: #fce696;
+    padding: 4rem 5rem 4rem 5rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
+    align-content: center;
+    align-items: stretch;
+
+    row-gap: 3rem;
+
+    max-width: 100rem;
+    min-height: 50rem;
+}
+
+.naziv-kosarice {
+    font-size: 4rem;
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 600;
+}
+
+.sadrzaj-kosarice {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column nowrap;
+
+    justify-content: flex-start;
+    align-items: stretch;
+
+    gap: 3rem;
+
+}
+
+.naziv-proizvoda-i-kolicina, .proizvod {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: row nowrap;
+
+    justify-content: space-between;
+    row-gap: 4rem;
+    column-gap: 3rem;
+}
+
+.naziv-proizvoda-i-kolicina {
+    font-size: 3.5rem;
+}
+
+.proizvod {
+    font-size: 2.5rem;
+}
+
+
+
+/* modeficiranje stvari za brojila */
+.spremnik-brtojilo-cart {
+    position: relative;                 /* definirma relativnu pozijju da bi child mogao apsulutno  psozicinirat na temlju njega*/
+}
+
+.brojilo {
+        /* stavranje brojila */
+    border: 3px solid #1f2937;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    background-color: #fce696;
+    text-align: center;
+    
+        /* pozicioniranje broja unutra */
+    /* display: flex;       display propirty je definiram tamo dolje, kada zelim prikazati kruzic samo postavim  display: flex */
+    flex-direction: row;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+
+.brojilo-cart {
+    /* pozicioniranje usred difv roditlelja */
+    position: absolute;
+    right: -20%;
+    bottom: -17%;
+
+        /* u pocektu da maknem tja kruzic */
+    display: none;              /* !!! ukoliko zelim vratit nazad kruzic onda bih stavio display: flex */
+}
+
+
+/* brojilo za iteme u kategoriji */
+.spremnik-brojilo-proizvod{
+    position: relative;
+}
+
+.brojilo.brojilo-proizvod {
+        /* pozicioniranje usred difv roditlelja */
+    position: absolute;
+    right: 7%;
+    bottom: 7%;
+
+        /* u pocektu da maknem tja kruzic */
+    display: none;              /* !!! ukoliko zelim vratit nazad kruzic onda bih stavio display: flex */
+
+    /* ipak promijena dimenzija brojaca */
+    width: 5rem;
+    height: 5rem;
+    border-radius: 2.5rem;
+    font-size: 2rem;
+
+    color: black;
+}
+
+/* posot je 1. kategorija staivm da je boldana */
+.sve-kategorije li:first-child {                /* !!! mozda cu trebat promijenit */
+    font-weight: 600;
+}
+
+
+/* nariktavanje kolica */
+.cart-proizvod {
+    position: absolute;
+    bottom: 38%;
+    right: 37%;
+    background-color: #fce696;
+    
+    width: 10rem;
+    height: auto;
+    padding: 2rem;
+
+    border-radius: 2rem;
+
+    display: none;          /* ako se zeli vidjet onda bi trebao biti inline blcok */
+}
+
+/* kada se prode preko proizvoda na kupovinu e onda se cartu dolje treba ukljucit display */
+
+
+.proizvod-opis {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 47rem;
+    justify-content: center;
+}
+
+.proizvod-slika-opis {
+    flex: 0 1 auto;
+    max-width: 40rem;
+}
+
+.strelica {
+    width: 4.6rem;
+    height: auto;
+}
+
+.strelica:hover {
+    transform: scale(1.2);
+}
+
+
+
+
+
+/* CSS za ove dijelove za dodavanje i micanje elemenata */
+.konkretna-kolicina {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    max-width: 22rem;
+
+    flex: 1 1 auto;
+
+    justify-items: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.plus, .minus {
+    background-color: #00755e;
+    padding: 0.8rem;
+    border-radius: 3rem;
+    position: relative;
+
+    min-width: 6rem;
+    min-height: 6rem;
+}
+
+#minusID, #plusID {
+    width: 4rem;
+}
+
+#minusID {
+    position: absolute;
+    bottom: 15%;
+    left: 16%;
+}
+
+#plusID {
+    width: 3.2rem;
+    position: absolute;
+    bottom: 24%;
+    left: 23%;
+}
+
+#minusID:hover, #plusID:hover {
+    transform: scale(1.2);
+}
+
+.brojilo-unutra {
+    padding: 2rem;
+    background-color: #659b90;
+    width: 6.3rem;
+    height: 6.3rem;
+    text-align: center;
+    border-radius: 3rem;
+    border: 5px solid #1f2937;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+/* neke dodatne stvari */
+.k-kolicina {
+    margin-right: 4.8rem;
+}
+
+.proizvod {
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.konkrento-ime {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-items:flex-end;
+    justify-content:left;
+
+    font-size: 2.8rem;
+    padding: 0;
+    margin: 0;
+
+    position: relative;
+
+    max-width: 30rem;
+}
+
+.konkretna-kolicina {
+    align-self: flex-start;
+
+}
+
+

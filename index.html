@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Početna stranica - Citadel prodavaonica društvenih igara</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/castle.png">
+            <!-- linkam stilove za stolna racunala, tj desktop computers-->
+        <link href="./styles/stolna-racunala.css" rel="stylesheet" >
+            <!-- linkam stilove za prijenosna racunala, ukoliko je velcina ekrana manja ili jednaka 1023, tj ako je < 1024px -->
+        <link href="./styles/prijenosna-racunala.css" rel="stylesheet" media="screen and (max-width: 1023px)">
+            <!-- ukljucujem javascript-->
+        <script src="./scripts/data.js" defer></script>   <!-- korsitimo defer dase nas kod izvrasva tek nakon sot se cijela stranica uictala-->
+    </head>
+    <body>
+        <script>
+
+        </script>
+        <!-- div predstavlja zaglavlje tj header stranice -->
+        <div class="header">
+            <div class="logotip">
+                <img class="logo-slika" src="./images/dice-d20.png" alt="Citadel logotip" height="100" width="auto">
+                <span class="ime-kompanije">Citadel</span>
+            </div>
+            <ul class="about">
+                <li><a class="about-anchor" href="https://youtu.be/dQw4w9WgXcQ?si=mPfqPxpPAqxNqlCm" target="_blank" 
+                    rel="noopener noreferrer">Kontakt</a></li>
+                <li><a class="about-anchor" href="https://youtu.be/Kob0G2hE8IY?si=HtPBXGjfCKDNZXag" target="_blank" 
+                    rel="noopener noreferrer">Newsletter</a></li>
+                <li><a class="about-anchor" href="https://youtu.be/G1IbRujko-A?si=NDkPlYJ3LZKl6ZNX" target="_blank" 
+                    rel="noopener noreferrer">Pretplati se!</a></li>
+            </ul>
+            <div class="cart-and-search">
+                <div class="spremnik-brtojilo-cart">
+                    <a href="./cart.html"><img class="cart" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto"></a>
+                    <div class="brojilo brojilo-cart">0</div>
+                </div>
+                <div><img class="search" src="./images/search.png" alt="search bar" height="100" width="auto"></div>
+            </div>
+        </div>
+
+        <!-- div predstavlja 2. dio stranice -->
+        <div class="drugi-dio-stranice">
+            <span>Where every roll tells a story</span>
+        </div>
+
+        <!-- div predstvalja 3. dio sranice -->
+        <div class="treci-dio-stranice">
+            <div class="izbor-kategorije">
+                <span>Društvene igre</span>
+                <ul class="sve-kategorije">
+                    <li id="1">Apstraktne strateške igre</li>
+                    <li id="2">Strateške igre</li>
+                    <li id="3">Tematske igre</li>
+                    <li id="4">Ratne igre</li>
+                    <li id="5">Party igre</li>
+                    <li id="6">Obiteljske igre</li>
+                    <li id="7">Igre s nadogradnjama</li>
+                    <li id="8">Dječje igre</li>
+                    <li id="9">Roleplay igre</li>
+                    <li id="10">Trading card igre</li>
+                </ul>
+            </div>
+            <div class="sadrzaj-specificne-kategorije">
+                <div class="ime-trenutne-kategorije">Treunutna kategorija: Apstraktne strateške igre</div>
+                <div class="sprmenik-proizvoda-kategorije">
+                    <div class="proizvod-slika-opis 1">
+                        <div class="spremnik-brojilo-proizvod">
+                            <img class="proizvod-slika" id="s1" src="./images/kategorija1/k1_1.webp" alt="za sada nista" width="400" height="auto">
+                            <img class="cart cart-proizvod" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto">
+                            <div class="brojilo brojilo-proizvod">0</div>
+                        </div>
+                        <div class="proizvod-opis">AZUL - MASTER CHOCOLATIER</div>
+                    </div>
+                    <div class="proizvod-slika-opis 2">
+                        <div class="spremnik-brojilo-proizvod"> 
+                            <img class="proizvod-slika" id="s2" src="./images/kategorija1/k1_2.webp" alt="za sada nista" width="400" height="auto">
+                            <img class="cart cart-proizvod" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto">
+                            <div class="brojilo brojilo-proizvod">0</div>
+                        </div>
+                        <div class="proizvod-opis">PATCHWORK - VALENTINE'S DAY EDITION</div>
+                    </div>
+                    <div class="proizvod-slika-opis 3">
+                        <div class="spremnik-brojilo-proizvod"> 
+                            <img class="proizvod-slika" id="s3" src="./images/kategorija1/k1_3.webp" alt="za sada nista" width="400" height="auto">
+                            <img class="cart cart-proizvod" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto">
+                            <div class="brojilo brojilo-proizvod">0</div>
+                        </div>
+                        <div class="proizvod-opis">YINSH</div>
+                    </div>
+                    <div class="proizvod-slika-opis 4">
+                        <div class="spremnik-brojilo-proizvod">
+                            <img class="proizvod-slika"  id="s4" id="s1" src="./images/kategorija1/k1_4.webp" alt="za sada nista" width="400" height="auto">
+                            <img class="cart cart-proizvod" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto">
+                            <div class="brojilo brojilo-proizvod">0</div>
+                        </div>
+                        <div class="proizvod-opis">WAR CHEST</div>
+                    </div>
+                    <div class="proizvod-slika-opis 5">
+                        <div class="spremnik-brojilo-proizvod">
+                            <img class="proizvod-slika" id="s5" src="./images/kategorija1/k1_5.webp" alt="za sada nista" width="400" height="auto">
+                            <img class="cart cart-proizvod" src="./images/shopping-cart.png" alt="shoping cart" height="100" width="auto">
+                            <div class="brojilo brojilo-proizvod">0</div>
+                        </div>
+                        <div class="proizvod-opis">HAVALANDI</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- div predstvalja skroz donji dio sranice, tj footer -->
+        <div class="footer">
+            <div class="footer-text">Citadel | Are you ready for advenutre?</div>
+        </div>
+    </body>
+</html>
