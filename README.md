@@ -2,7 +2,7 @@
 
 > **Personal Note**: I’ve developed this project using **webp** images, which are modern and optimized for the web. However, despite using the latest version of Google Chrome, I’ve noticed that some images don’t display properly when hosted via GitHub Pages. It seems that the **webp** format might not be fully supported in this hosting environment or across all browsers. If you experience missing images, it’s probably related to this issue. I recommend trying the page on different browsers or devices, or I might update the images to a more universally supported format like **png** in future updates.
 
-[**Click here to view the live web shop**](https://fran-galic.github.io/Web-App-Development-Lab1/)
+🌐 **Check out the live version of the project here**: [View Web App Development Lab 1](https://fran-galic.github.io/Web-App-Development-Lab1/)
 
 ## Course Overview
 
