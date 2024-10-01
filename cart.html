@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Košarica - Citadel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="./images/castle.png">
+            <!-- linkam stilove za stolna racunala, tj desktop computers-->
+        <link href="./styles/stolna-racunala.css" rel="stylesheet" >
+            <!-- linkam stilove za prijenosna racunala, ukoliko je velcina ekrana manja ili jednaka 1023, tj ako je < 1024px -->
+        <link href="./styles/prijenosna-racunala.css" rel="stylesheet" media="screen and (max-width: 1023px)">
+        <script src="./scripts/cart.js" defer></script>
+    </head>
+    <body>
+        <!-- div predstavlja zaglavlje tj header stranice -->
+        <div class="header">
+            <div class="logotip">
+                <img class="logo-slika" src="./images/dice-d20.png" alt="Citadel logotip" height="100" width="auto">
+                <span class="ime-kompanije">Citadel</span>
+            </div>
+            <ul class="about">
+                <li><a class="about-anchor" href="https://youtu.be/dQw4w9WgXcQ?si=mPfqPxpPAqxNqlCm" target="_blank" 
+                    rel="noopener noreferrer">Kontakt</a></li>
+                <li><a class="about-anchor" href="https://youtu.be/Kob0G2hE8IY?si=HtPBXGjfCKDNZXag" target="_blank" 
+                    rel="noopener noreferrer">Newsletter</a></li>
+                <li><a class="about-anchor" href="https://youtu.be/G1IbRujko-A?si=NDkPlYJ3LZKl6ZNX" target="_blank" 
+                    rel="noopener noreferrer">Pretplati se!</a></li>
+            </ul>
+            <div class="cart-and-search">
+                <a href="./index.html"><img class="strelica" src="./images/arrow.png" alt="strelica nazad" height="100" width="auto"></a>
+                <div><img class="search" src="./images/search.png" alt="search bar" height="100" width="auto"></div>
+            </div>
+        </div>
+
+        <!-- div predstavlja 2. dio stranice -->
+        <div class="drugi-dio-stranice">
+            <span>Where every roll tells a story</span>
+        </div>
+
+        <!-- dvi koji predsatvlja sadrzaj kosarice -->
+        <div class="dio-sa-kosaricom">
+            <div class="k-zajednicki-spremnik">
+                <div class="naziv-kosarice">Košarica je prazna</div>
+                <!-- <div class="sadrzaj-kosarice">
+                    <div class="naziv-proizvoda-i-kolicina">
+                        <div class="k-naziv-proizvoda">Naziv proizvoda</div>
+                        <div class="k-kolicina">Količina</div>
+                    </div>
+                    <div class="proizvod">
+                        <div class="konkrento-ime"><p>Proizvod 1</p></div>
+                        <div class="konkretna-kolicina">
+                            <div class="minus"><img id="minusID" src="./images/minus.png"></div>
+                            <div class="brojilo-unutra">0</div>
+                            <div class="plus"><img id="plusID" src="./images/plus.png"></div>
+                        </div>
+                    </div> 
+                    <div class="proizvod">
+                        <div class="konkrento-ime">Proizvod 2</div>
+                        <div class="konkretna-kolicina">za sad ovo 2</div>
+                    </div> 
+                    <div class="proizvod">
+                        <div class="konkrento-ime">Proizvod 3</div>
+                        <div class="konkretna-kolicina">za sad ovo 3</div>
+                    </div> 
+                </div> -->
+            </div>    
+        </div>
+
+        <!-- div predstvalja skroz donji dio sranice, tj footer -->
+        <div class="footer">
+            <div class="footer-text">Citadel | Are you ready for advenutre?</div>
+        </div>
+    </body>
+</html>

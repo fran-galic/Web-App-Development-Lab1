@@ -1,0 +1,178 @@
+
+/* 1. dio koji je potrebno promijenit za prijenosna racunala */
+.header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 4rem;
+    row-gap: 1rem;
+
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+
+    padding: 0.5rem 3rem 0.7rem 3rem;        /* 2% od roditleja koji je u ovom slucaju sam body element */
+}
+
+
+.logo-slika {
+    width: 6rem;
+    height: auto;
+}
+
+.ime-kompanije {
+    font-size: 5rem;
+    padding-left: 1rem;
+    font-family: Gow-font;
+}
+
+
+ul.about {
+    order: 3;
+    padding: 0;         /* padding: 4rem 0 0 0; */
+    margin: 0;
+    list-style-type: none;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+}
+
+.logotip {
+    order: 1;
+}
+
+.cart-and-search {
+    order: 2;
+    padding: 0;                               /* 1.7rem; */
+    gap: 1.5rem;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.about-anchor:hover {
+    font-size: 2.5rem;              /* ostane isot ko i prije */
+}
+
+.about li:hover{
+    transform: scale(1.2);
+}
+
+.cart {
+    width: 4rem;
+    height: auto;
+}
+
+.search {
+    width: auto;
+    height: 4rem;
+}
+
+
+/* css za prijenosna racunala za drugi dio stranice: */
+.drugi-dio-stranice {
+    width: 100vw;
+    height: 40vh;
+
+    background: #659b90 url(./../images/pozadina4.jpg) center center no-repeat scroll;
+    background-size: cover;
+ 
+    justify-content: center;
+}
+
+.drugi-dio-stranice span {
+    display:inline-block;
+    padding: 2rem;
+    font-size: 4rem;
+    color: #659b90;
+    -webkit-text-stroke: 0.1rem black; 
+
+    text-align: center;
+
+}
+
+
+/* css za treci dio stranice za prijenosna raucnala */
+.treci-dio-stranice {
+    padding: 4rem 4rem;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+
+    row-gap: 6rem;
+}
+
+.izbor-kategorije {
+    display: flex;
+    flex-flow: column nowrap;
+    align-content: center;
+    align-items: center;
+
+    padding: 3rem;
+}
+
+.izbor-kategorije span {
+    font-size: 3.1rem;
+}
+
+.sve-kategorije {
+    padding: 2rem 0 0 0;         
+    margin: 0;
+    list-style-type: none;
+
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: 3rem;
+    column-gap: 3rem;
+
+    font-size: 2.7rem;
+
+    justify-content: center;
+}
+
+.sadrzaj-specificne-kategorije {
+    align-items: center;
+    padding: 3rem 3rem 2rem 3rem;
+}
+
+.ime-trenutne-kategorije {
+    font-size: 3.3rem;
+    padding-bottom: 2.4rem;
+
+    font-weight: 600;
+}
+
+.sprmenik-proizvoda-kategorije {
+    column-gap: 5rem;
+    row-gap: 2.4rem;
+
+    justify-content: center;
+}
+
+/* zadnji dio sa footerom */
+.footer {
+    height: 14vh;
+    width: 100vw;
+
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.footer-text {
+    color: #00755e;
+    font-size: 3.5rem;
+    font-family: Gow-font;
+    text-align: center;
+}
+
