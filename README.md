@@ -1,5 +1,9 @@
 # Web App Development - Lab 1
 
+> **Personal Note**: I’ve developed this project using **webp** images, which are modern and optimized for the web. However, despite using the latest version of Google Chrome, I’ve noticed that some images don’t display properly when hosted via GitHub Pages. It seems that the **webp** format might not be fully supported in this hosting environment or across all browsers. If you experience missing images, it’s probably related to this issue. I recommend trying the page on different browsers or devices, or I might update the images to a more universally supported format like **png** in future updates.
+
+[**Click here to view the live web shop**](https://fran-galic.github.io/Web-App-Development-Lab1/)
+
 ## Course Overview
 
 The **Web App Development** course introduces fundamental concepts and technologies for web development, focusing on web architectures, protocols, and standards. Students learn to build dynamic web applications using HTML5, CSS, and JavaScript on the client side, and Node.js on the server side. The course is divided into two parts:
@@ -31,10 +35,12 @@ In **Lab 1**, the task was to create a simple web shop application with the foll
 ### Features
 
 1. **Product Browsing**:
+
    - Users can view products based on different categories.
    - Clicking on a product displays its details.
 
 2. **Cart Management**:
+
    - Users can add products to their cart.
    - The cart page allows users to adjust the quantity of items or remove items.
    - Cart data is stored in **LocalStorage**, so it persists across page reloads.
@@ -47,12 +53,12 @@ In **Lab 1**, the task was to create a simple web shop application with the foll
 /root  
 ├── /images  
 ├── /scripts  
-│   ├── cart.js  
-│   ├── data.js  
+│ ├── cart.js  
+│ ├── data.js  
 ├── /styles  
-│   └── main.css  
+│ └── main.css  
 ├── cart.html  
-└── index.html  
+└── index.html
 
 - **index.html**: Main product page with categories.
 - **cart.html**: Cart page for managing items.
